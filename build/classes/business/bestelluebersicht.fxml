@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.BestelluebersichtController">
+   <children>
+      <VBox alignment="CENTER" layoutX="68.0" layoutY="59.0" prefHeight="583.0" prefWidth="600.0" spacing="20.0" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="183.0" layoutY="59.0" text="Bestellübersich nach Benutzer" underline="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TableView fx:id="bestelluebersichtTableView" fixedCellSize="0.0" layoutX="68.0" layoutY="119.0" prefHeight="435.0" prefWidth="500.0">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin></TableView>
+            <HBox alignment="CENTER" spacing="150.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#wechselZuBestellung" text="Zurück" />
+                  <Button mnemonicParsing="false" onAction="#aktualisiereBestelluebersicht" text="Aktualisieren" />
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Wechsel zur Ansicht nach Gericht:  " />
+                  <Button mnemonicParsing="false" text="klick mich" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets bottom="20.0" />
+   </opaqueInsets>
+</AnchorPane>

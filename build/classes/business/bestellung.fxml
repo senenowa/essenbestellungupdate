@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.BestellungController">
+   <children>
+      <VBox alignment="CENTER" layoutX="123.0" layoutY="53.0" spacing="60.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="essensbestellungLabel" text="Essensbestellung">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Label fx:id="NameLabel" text="Name" />
+                  <TextField fx:id="nameTextField" />
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label layoutX="128.0" layoutY="216.0" text="Essensauswahl">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" spacing="60.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Label layoutX="130.0" layoutY="245.0" text="Vorschläge von Kollegen" />
+                              <ChoiceBox fx:id="vorschlagChoiceBox" prefWidth="150.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Label layoutX="316.0" layoutY="245.0" text="neues Gericht" />
+                              <TextField fx:id="gerichtTextField" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" spacing="50.0">
+               <children>
+                  <Button fx:id="BestelluebersichtButton" mnemonicParsing="false" onAction="#bestellueberischtAnzeigen" prefHeight="30.0" prefWidth="150.0" text="Bestellübersicht" />
+                  <Button fx:id="bestellungSendenButton" mnemonicParsing="false" onAction="#bestellungSenden" prefHeight="30.0" prefWidth="150.0" text="Bestellung senden" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
