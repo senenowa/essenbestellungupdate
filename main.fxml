@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.Main">
+   <opaqueInsets>
+      <Insets bottom="20.0" />
+   </opaqueInsets>
+   <children>
+      <VBox layoutX="256.0" layoutY="346.0" spacing="20.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <Label prefHeight="74.0" prefWidth="538.0" text="Willkommen bei der enowa Essensapp.">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER">
+               <children>
+                  <Button layoutX="256.0" layoutY="346.0" mnemonicParsing="false" onAction="#wechsleBestellung" prefHeight="90.0" prefWidth="195.0" text="Start - Klick mich :)" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="256.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="346.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fitHeight="156.0" fitWidth="289.0" layoutX="311.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@enowa_logo_white.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
